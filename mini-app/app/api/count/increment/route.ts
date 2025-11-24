@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { sharedCount } from "../count/route";
+import { sharedCount } from "../route";
 
 export async function POST() {
   sharedCount += 1;
