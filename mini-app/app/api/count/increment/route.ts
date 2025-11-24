@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { sharedCount } from "../route";
+import { sharedCounter } from "@/lib/sharedCounter";
 
 export async function POST() {
-  sharedCount += 1;
-  return NextResponse.json({ count: sharedCount });
+  sharedCounter += 1;
+  return NextResponse.json({ count: sharedCounter });
 }
