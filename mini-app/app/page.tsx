@@ -1,11 +1,11 @@
 import { description, title } from "@/lib/metadata";
 import { generateMetadata } from "@/lib/farcaster-embed";
+import Counter from "@/components/counter";
 
 export { generateMetadata };
 
 export default function Home() {
   // NEVER write anything here, only use this page to import components
-import Counter from "@/components/counter";
 
   return (
     <main className="flex flex-col gap-3 place-items-center place-content-center px-4 grow">
